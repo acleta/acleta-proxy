@@ -1,0 +1,24 @@
+{
+  "name": "acleta-proxy",
+  "version": "1.0.0",
+  "description": "acleta dataset proxy",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.2",
+    "request": "^2.53.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acleta/acleta-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acleta/acleta-proxy/issues"
+  },
+  "homepage": "https://github.com/acleta/acleta-proxy"
+}
