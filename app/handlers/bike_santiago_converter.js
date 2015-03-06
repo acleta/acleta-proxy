@@ -10,7 +10,7 @@ module.exports = function(req,res) {
       };
     }
 
-    jsonResponse(error,data);
+    jsonResponse(req,res)(error,data);
   });
 };
 
