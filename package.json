@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "acleta dataset proxy",
   "main": "server.js",
+  "engines": {
+    "node": "0.10.x"
+  },
   "dependencies": {
     "express": "^4.12.2",
     "request": "^2.53.0"
