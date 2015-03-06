@@ -7,6 +7,7 @@ module.exports = function (req, res) {
     }
 
     res.set('Content-Type', 'application/json');
+    res.set('Cache-Control', 'public, max-age=180');
     res.send(JSON.stringify(data));
   };
 };
