@@ -47,14 +47,20 @@ function convertStationToFeature(station) {
     geometry: {
       type: "Point",
       coordinates: [
-        station.Location.Latitude,
         station.Location.Longitude,
-        0
+        station.Location.Latitude
       ]
     },
     properties: {
       id: station.Id,
-      status: station.Status
+      name: station.Name,
+      status: station.Status,
+      address: station.Address.Street,
+      city: station.Address.City,
+
+      availableBikes: station.BikesAvailable,
+      availableDocks: station.DocksAvailable,
+      totalDocks: station.TotalDocks
     }
   };
 };
