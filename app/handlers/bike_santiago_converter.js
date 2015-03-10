@@ -42,7 +42,7 @@ module.exports = function(req,res) {
   }
 */
 function convertStationToFeature(station) {
-  return {
+  var feature = {
     type: "Feature",
     geometry: {
       type: "Point",
@@ -63,4 +63,14 @@ function convertStationToFeature(station) {
       totalDocks: station.TotalDocks
     }
   };
+
+  if (station.BikesAvailable === 0) {
+    feature.properties.status = "Empty";
+  }
+
+  if (station.DocksAvailable === 0) {
+    feature.properties.status = "Full";
+  }
+
+  return feature;
 };
